@@ -1,5 +1,5 @@
 {
-  "name": "depcheck-ai",
+  "name": "depcheckai",
   "version": "0.1.0",
   "description": "One command — audit your dependencies for deprecated, risky & outdated packages across npm, PyPI & crates.io. Like npm audit meets AI-powered recommendations.",
   "keywords": [
@@ -32,7 +32,7 @@
   "license": "MIT",
   "author": "FMATheNomad",
   "bin": {
-    "depcheck-ai": "./dist/index.js"
+    "depcheckai": "./dist/index.js"
   },
   "files": [
     "dist/**/*",

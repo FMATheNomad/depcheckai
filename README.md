@@ -4,13 +4,13 @@
 
 ### *"Stop shipping broken dependencies. One command tells you what's deprecated, risky, or needs replacing."*
 
-[![npm version](https://img.shields.io/npm/v/depcheck-ai?style=for-the-badge&logo=npm&label=version)](https://www.npmjs.com/package/depcheck-ai)
+[![npm version](https://img.shields.io/npm/v/depcheckai?style=for-the-badge&logo=npm&label=version)](https://www.npmjs.com/package/depcheckai)
 [![GitHub Release](https://img.shields.io/github/v/release/FMATheNomad/depcheck-ai?style=for-the-badge&logo=github)](https://github.com/FMATheNomad/depcheck-ai/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/FMATheNomad/depcheck-ai?style=for-the-badge&logo=github&color=yellow)](https://github.com/FMATheNomad/depcheck-ai/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge&logo=opensourceinitiative)](https://opensource.org/licenses/MIT)
 [![CI](https://img.shields.io/github/actions/workflow/status/FMATheNomad/depcheck-ai/ci.yml?style=for-the-badge&logo=githubactions&label=CI)](https://github.com/FMATheNomad/depcheck-ai/actions)
 [![Sponsor](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F_Sponsor-Support_the_project-30363D?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/FMATheNomad)
-[![npm downloads](https://img.shields.io/npm/dm/depcheck-ai?style=for-the-badge&logo=npm&color=success)](https://www.npmjs.com/package/depcheck-ai)
+[![npm downloads](https://img.shields.io/npm/dm/depcheckai?style=for-the-badge&logo=npm&color=success)](https://www.npmjs.com/package/depcheckai)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 ---
@@ -58,27 +58,27 @@ Your project depends on 50+ packages. You have no idea which ones are:
 
 ```bash
 # Scan your entire project — auto-detects package.json, requirements.txt, Cargo.toml
-depcheck-ai
+depcheckai
 
 # Check any package from your terminal
-depcheck-ai check lodash
-depcheck-ai check request
-depcheck-ai check react@18.2.0
+depcheckai check lodash
+depcheckai check request
+depcheckai check react@18.2.0
 
 # Full health audit with recommendations
-depcheck-ai audit
+depcheckai audit
 
 # See update recommendations for all deps
-depcheck-ai update
+depcheckai update
 
 # Get JSON for CI/CD
-depcheck-ai --json
+depcheckai --json
 ```
 
 ### Real Output
 
 ```
-$ depcheck-ai
+$ depcheckai
 
 ✔ Scanned package.json — 10 dependencies found
 
@@ -120,20 +120,20 @@ request-deprecated  2.88.2    critical   8    🔴 REPLACE → axios
 
 ```bash
 # Install globally
-npm install -g depcheck-ai
+npm install -g depcheckai
 
 # Or run instantly
-npx depcheck-ai
+npx depcheckai
 
 # Scan your project
 cd your-project
-depcheck-ai
+depcheckai
 
 # Check a specific package with alternatives
-depcheck-ai check request
+depcheckai check request
 
 # JSON output for CI/CD pipelines
-depcheck-ai --json
+depcheckai --json
 ```
 
 ### Supported Ecosystems
@@ -177,7 +177,7 @@ depcheck-ai --json
 ### JSON Output (any CI)
 
 ```bash
-depcheck-ai --json --fail-on medium
+depcheckai --json --fail-on medium
 echo $?  # 0 = pass, 1 = fail
 ```
 
@@ -185,7 +185,7 @@ echo $?  # 0 = pass, 1 = fail
 
 ```bash
 #!/bin/sh
-depcheck-ai --json --fail-on low || exit 1
+depcheckai --json --fail-on low || exit 1
 ```
 
 Save as `.git/hooks/pre-commit` and `chmod +x`.
