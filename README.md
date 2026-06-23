@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔍 depcheck-ai
+# 🔍 depcheckai
 
 ### *"Stop shipping broken dependencies. One command tells you what's deprecated, risky, or needs replacing."*
 
@@ -26,7 +26,7 @@
 
 ---
 
-> **Stop manually checking npm pages, scrolling through GitHub repos, and running five different CLI tools just to understand your dependency health. depcheck-ai scans your project's dependencies across npm, PyPI, and crates.io — then tells you what's broken, deprecated, or risky with actionable recommendations and alternatives. All in under 3 seconds.**
+> **Stop manually checking npm pages, scrolling through GitHub repos, and running five different CLI tools just to understand your dependency health. depcheckai scans your project's dependencies across npm, PyPI, and crates.io — then tells you what's broken, deprecated, or risky with actionable recommendations and alternatives. All in under 3 seconds.**
 
 ---
 
@@ -48,13 +48,13 @@ Your project depends on 50+ packages. You have no idea which ones are:
 | 🙋 Manual — check each package on npm/GitHub | 20-40 min per project | ✅ Many | ❌ |
 | 🔧 npm audit — CVE check only | Instant | ❌ Deprecation, health, popularity | ❌ |
 | 🤖 Dependabot — auto PRs | Automated | ❌ Health analysis | ❌ |
-| 🔍 **depcheck-ai** | **< 3 seconds** | **✅ Comprehensive** | **✅ AI-powered suggestions** |
+| 🔍 **depcheckai** | **< 3 seconds** | **✅ Comprehensive** | **✅ AI-powered suggestions** |
 
-**Bottom line:** Existing tools tell you *about* security issues. **depcheck-ai tells you what to *do* about them** — replace, update, or ignore — with specific alternatives.
+**Bottom line:** Existing tools tell you *about* security issues. **depcheckai tells you what to *do* about them** — replace, update, or ignore — with specific alternatives.
 
 ---
 
-## 🎯 What depcheck-ai Does
+## 🎯 What depcheckai Does
 
 ```bash
 # Scan your entire project — auto-detects package.json, requirements.txt, Cargo.toml
@@ -82,7 +82,7 @@ $ depcheckai
 
 ✔ Scanned package.json — 10 dependencies found
 
-depcheck-ai — Dependency Health Report
+depcheckai — Dependency Health Report
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Package              Ver       Health   Score  Action
 ─────────────────────────────────────────────────────────────
@@ -96,9 +96,9 @@ request-deprecated  2.88.2    critical   8    🔴 REPLACE → axios
 
 ---
 
-## 📊 Why depcheck-ai? (vs Alternatives)
+## 📊 Why depcheckai? (vs Alternatives)
 
-| Feature | You (Manual) | npm audit | Dependabot | Safety CLI | **depcheck-ai** |
+| Feature | You (Manual) | npm audit | Dependabot | Safety CLI | **depcheckai** |
 |---------|-------------|-----------|------------|------------|-----------------|
 | 🔍 CVE detection | ❌ | ✅ | ✅ | ✅ | ✅ |
 | 📦 Deprecation detection | ❌ (manual check) | ❌ | ❌ | ❌ | ✅ |
@@ -112,7 +112,7 @@ request-deprecated  2.88.2    critical   8    🔴 REPLACE → axios
 | 💵 Price | ⏱ Your time | Free | Free (public) | Free | **Free & open source** |
 | 📜 License | — | MIT | Proprietary | MIT | **MIT** |
 
-**Bottom line:** Every other tool only solves *one* piece of the puzzle. **depcheck-ai is the first tool that gives you a complete health picture across ecosystems — and tells you exactly what to do.**
+**Bottom line:** Every other tool only solves *one* piece of the puzzle. **depcheckai is the first tool that gives you a complete health picture across ecosystems — and tells you exactly what to do.**
 
 ---
 
@@ -157,7 +157,7 @@ depcheckai --json
 | 🚦 **CI/CD Ready** | `--fail-on` flag + exit codes for pipeline integration |
 | 🚀 **GitHub Action** | Drop-in action for PR comments and build failure |
 | 💾 **Smart Caching** | 1-hour API response cache, aggressive GitHub rate-limit handling |
-| ⚙️ **Configurable** | `.depcheck-ai.json` for teams and org-wide policies |
+| ⚙️ **Configurable** | `.depcheckai.json` for teams and org-wide policies |
 
 ---
 
@@ -201,7 +201,7 @@ Save as `.git/hooks/pre-commit` and `chmod +x`.
 - [x] Recommendation engine with alternatives
 - [x] Table, JSON, Markdown output
 - [x] GitHub Action
-- [x] Config file (.depcheck-ai.json)
+- [x] Config file (.depcheckai.json)
 - [ ] **Interactive update mode** (`--interactive`) — v0.2
 - [ ] **Pre-commit hook integration** — v0.2
 - [ ] **VS Code extension** — v0.3
@@ -213,7 +213,7 @@ Save as `.git/hooks/pre-commit` and `chmod +x`.
 
 ```bash
 git clone https://github.com/FMATheNomad/depcheck-ai.git
-cd depcheck-ai
+cd depcheckai
 npm install
 npm run build
 npm test
@@ -237,12 +237,12 @@ MIT © [FMA Software Labs](https://fmasoftwarelabs.up.railway.app)
 
 **Built by a solo founder who got tired of deploying with outdated, deprecated, and risky dependencies.**
 
-If depcheck-ai saves you even one dependency-related outage or security audit headache, please support it — every bit counts:
+If depcheckai saves you even one dependency-related outage or security audit headache, please support it — every bit counts:
 
 [![Star](https://img.shields.io/badge/%E2%AD%90_Star_on_GitHub-yellow?style=for-the-badge&logo=github)](https://github.com/FMATheNomad/depcheck-ai/stargazers)
 [![Sponsor](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F_Sponsor-30363D?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/FMATheNomad)
-[![Share on X](https://img.shields.io/badge/Share_on_X-black?style=for-the-badge&logo=x)](https://x.com/intent/tweet?text=Stop%20shipping%20broken%20dependencies.%20depcheck-ai%20scans%20your%20npm%2C%20PyPI%2C%20and%20crates.io%20dependencies%20and%20tells%20you%20what%27s%20deprecated%2C%20risky%2C%20or%20needs%20replacing.%20%F0%9F%94%8D%20Free%20%26%20open%20source.&url=https://github.com/FMATheNomad/depcheck-ai)
-[![Share on Reddit](https://img.shields.io/badge/Share_on_Reddit-FF4500?style=for-the-badge&logo=reddit)](https://reddit.com/r/javascript/submit?title=depcheck-ai%3A%20AI-powered%20dependency%20health%20checker&url=https://github.com/FMATheNomad/depcheck-ai)
+[![Share on X](https://img.shields.io/badge/Share_on_X-black?style=for-the-badge&logo=x)](https://x.com/intent/tweet?text=Stop%20shipping%20broken%20dependencies.%20depcheckai%20scans%20your%20npm%2C%20PyPI%2C%20and%20crates.io%20dependencies%20and%20tells%20you%20what%27s%20deprecated%2C%20risky%2C%20or%20needs%20replacing.%20%F0%9F%94%8D%20Free%20%26%20open%20source.&url=https://github.com/FMATheNomad/depcheck-ai)
+[![Share on Reddit](https://img.shields.io/badge/Share_on_Reddit-FF4500?style=for-the-badge&logo=reddit)](https://reddit.com/r/javascript/submit?title=depcheckai%3A%20AI-powered%20dependency%20health%20checker&url=https://github.com/FMATheNomad/depcheck-ai)
 
 ---
 

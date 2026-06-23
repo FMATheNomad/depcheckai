@@ -49,7 +49,7 @@ export class ChangelogParser {
         try {
           const response = await fetch(
             `https://raw.githubusercontent.com/${owner}/${cleanRepo}/main/${file}`,
-            { headers: { 'User-Agent': 'depcheck-ai/0.1.0' } }
+            { headers: { 'User-Agent': 'depcheckai/0.1.0' } }
           );
           if (response.ok) {
             const text = await response.text();
@@ -58,7 +58,7 @@ export class ChangelogParser {
 
           const responseMaster = await fetch(
             `https://raw.githubusercontent.com/${owner}/${cleanRepo}/master/${file}`,
-            { headers: { 'User-Agent': 'depcheck-ai/0.1.0' } }
+            { headers: { 'User-Agent': 'depcheckai/0.1.0' } }
           );
           if (responseMaster.ok) {
             const text = await responseMaster.text();

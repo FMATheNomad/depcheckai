@@ -18,7 +18,7 @@ const pkgPath = new URL('../package.json', import.meta.url);
 const pkg = JSON.parse(readFileSync(pkgPath, 'utf-8'));
 
 program
-  .name('depcheck-ai')
+  .name('depcheckai')
   .description('AI-powered dependency health checker')
   .version(pkg.version || '0.1.0')
   .option('--manifest <path>', 'Path to manifest file')
@@ -35,7 +35,7 @@ program
   .option('--eco <ecosystem>', 'Ecosystem (npm, pypi, crates)')
   .action(async (packageSpec: string | undefined, options: Record<string, unknown>) => {
     if (!packageSpec) {
-      logger.error('Package name required. Usage: depcheck-ai check <package>');
+      logger.error('Package name required. Usage: depcheckai check <package>');
       process.exit(1);
     }
 
@@ -158,13 +158,13 @@ program
 
 program
   .command('init')
-  .description('Generate .depcheck-ai.json config')
+  .description('Generate .depcheckai.json config')
   .action(() => {
     const config = generateConfig();
     const configStr = configToJson(config);
-    const configPath = join(process.cwd(), '.depcheck-ai.json');
+    const configPath = join(process.cwd(), '.depcheckai.json');
     if (existsSync(configPath)) {
-      logger.warn('.depcheck-ai.json already exists. Overwriting.');
+      logger.warn('.depcheckai.json already exists. Overwriting.');
     }
     writeFileSync(configPath, configStr, 'utf-8');
     logger.success(`Config generated at ${configPath}`);
@@ -175,7 +175,7 @@ const knownCommands = ['check', 'scan', 'update', 'audit', 'init', 'help'];
 const hasCommand = args.some(a => knownCommands.includes(a));
 
 if (!hasCommand) {
-  const scanArgs = ['node', 'depcheck-ai', 'scan', ...args];
+  const scanArgs = ['node', 'depcheckai', 'scan', ...args];
   program.parse(scanArgs);
 } else {
   program.parse(process.argv);

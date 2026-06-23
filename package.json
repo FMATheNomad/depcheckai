@@ -19,7 +19,7 @@
     "solo-founder",
     "package-audit",
     "dependency-management",
-    "depcheck-ai",
+    "depcheckai",
     "npm-audit",
     "pypi",
     "crates-io"

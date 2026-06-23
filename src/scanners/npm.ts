@@ -30,7 +30,7 @@ const NPM_DOWNLOADS = 'https://api.npmjs.org/downloads';
 async function npmFetch(url: string): Promise<Response> {
   await rateLimiter.waitIfNeeded('npm');
   const response = await fetch(url, {
-    headers: { Accept: 'application/json', 'User-Agent': 'depcheck-ai/0.1.0' },
+    headers: { Accept: 'application/json', 'User-Agent': 'depcheckai/0.1.0' },
   });
   if (response.status === 429) {
     const reset = parseInt(response.headers.get('x-reset') || '60', 10);
@@ -117,7 +117,7 @@ export class NpmScanner {
         const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
           headers: {
             Accept: 'application/vnd.github.v3+json',
-            'User-Agent': 'depcheck-ai/0.1.0',
+            'User-Agent': 'depcheckai/0.1.0',
           },
         });
 

@@ -33,7 +33,7 @@ async function cratesFetch(url: string): Promise<Response> {
   const response = await fetch(url, {
     headers: {
       Accept: 'application/json',
-      'User-Agent': 'depcheck-ai/0.1.0',
+      'User-Agent': 'depcheckai/0.1.0',
     },
   });
   return response;

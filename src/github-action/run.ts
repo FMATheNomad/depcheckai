@@ -93,6 +93,6 @@ async function run(): Promise<void> {
 }
 
 run().catch(err => {
-  console.error('depcheck-ai action failed:', err);
+  console.error('depcheckai action failed:', err);
   process.exit(1);
 });

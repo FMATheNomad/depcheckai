@@ -40,7 +40,7 @@ export const TableFormatter: Formatter = {
     const lines: string[] = [];
 
     lines.push('');
-    lines.push(chalk.bold.cyan('depcheck-ai — Dependency Health Report'));
+    lines.push(chalk.bold.cyan('depcheckai — Dependency Health Report'));
     lines.push(chalk.gray('━'.repeat(70)));
     lines.push(
       chalk.bold(

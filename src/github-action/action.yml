@@ -1,4 +1,4 @@
-name: 'depcheck-ai'
+name: 'depcheckai'
 description: 'AI-powered dependency health check — detects deprecated, risky, and broken dependencies'
 author: 'FMATheNomad'
 inputs:

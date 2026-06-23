@@ -30,7 +30,7 @@ const PYPI_API = 'https://pypi.org/pypi';
 async function pypiFetch(url: string): Promise<Response> {
   await rateLimiter.waitIfNeeded('pypi');
   const response = await fetch(url, {
-    headers: { Accept: 'application/json', 'User-Agent': 'depcheck-ai/0.1.0' },
+    headers: { Accept: 'application/json', 'User-Agent': 'depcheckai/0.1.0' },
   });
   return response;
 }
@@ -81,7 +81,7 @@ export class PyPiScanner {
       try {
         const response = await fetch(
           `https://pypistats.org/api/packages/${encodeURIComponent(name)}/recent`,
-          { headers: { 'User-Agent': 'depcheck-ai/0.1.0' } }
+          { headers: { 'User-Agent': 'depcheckai/0.1.0' } }
         );
         if (!response.ok) return null;
         const data = await response.json() as Record<string, unknown>;

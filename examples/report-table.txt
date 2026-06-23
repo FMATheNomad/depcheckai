@@ -1,4 +1,4 @@
-depcheck-ai — Dependency Health Report
+depcheckai — Dependency Health Report
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Package              Ver          Health     Score  Action
 ─────────────────────────────────────────────────────────────

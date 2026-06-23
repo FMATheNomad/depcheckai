@@ -21,9 +21,9 @@ const DEFAULT_CONFIG: DepcheckConfig = {
 
 function resolveConfigPath(rootPath: string): string {
   const candidates = [
-    join(rootPath, '.depcheck-ai.json'),
-    join(rootPath, '.depcheck-ai.jsonc'),
-    join(rootPath, 'depcheck-ai.json'),
+    join(rootPath, '.depcheckai.json'),
+    join(rootPath, '.depcheckai.jsonc'),
+    join(rootPath, 'depcheckai.json'),
   ];
   for (const candidate of candidates) {
     if (existsSync(candidate)) return candidate;

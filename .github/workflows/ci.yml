@@ -28,7 +28,7 @@ jobs:
       - name: Test CLI
         run: node dist/index.js --version
 
-      - name: Run depcheck-ai on itself
+      - name: Run depcheckai on itself
         run: node dist/index.js --manifest package.json
 
   publish:
