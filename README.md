@@ -4,13 +4,13 @@
 
 ### *"Stop shipping broken dependencies. One command tells you what's deprecated, risky, or needs replacing."*
 
-[![npm version](https://img.shields.io/npm/v/depcheckai?style=for-the-badge&logo=npm&label=version)](https://www.npmjs.com/package/depcheckai)
+[![npm version](https://img.shields.io/github/v/release/FMATheNomad/depcheck-ai?style=for-the-badge&logo=github&label=version)](https://github.com/FMATheNomad/depcheck-ai/pkgs/npm/depcheckai)
 [![GitHub Release](https://img.shields.io/github/v/release/FMATheNomad/depcheck-ai?style=for-the-badge&logo=github)](https://github.com/FMATheNomad/depcheck-ai/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/FMATheNomad/depcheck-ai?style=for-the-badge&logo=github&color=yellow)](https://github.com/FMATheNomad/depcheck-ai/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge&logo=opensourceinitiative)](https://opensource.org/licenses/MIT)
 [![CI](https://img.shields.io/github/actions/workflow/status/FMATheNomad/depcheck-ai/ci.yml?style=for-the-badge&logo=githubactions&label=CI)](https://github.com/FMATheNomad/depcheck-ai/actions)
 [![Sponsor](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F_Sponsor-Support_the_project-30363D?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/FMATheNomad)
-[![npm downloads](https://img.shields.io/npm/dm/depcheckai?style=for-the-badge&logo=npm&color=success)](https://www.npmjs.com/package/depcheckai)
+[![GitHub Downloads](https://img.shields.io/github/downloads/FMATheNomad/depcheck-ai/total?style=for-the-badge&logo=github&color=success)](https://github.com/FMATheNomad/depcheck-ai/pkgs/npm/depcheckai)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 ---
@@ -120,10 +120,10 @@ request-deprecated  2.88.2    critical   8    🔴 REPLACE → axios
 
 ```bash
 # Install globally
-npm install -g depcheckai
+npm install -g @fmathenomad/depcheckai
 
 # Or run instantly
-npx depcheckai
+npx @fmathenomad/depcheckai
 
 # Scan your project
 cd your-project
