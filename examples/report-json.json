@@ -1,0 +1,71 @@
+{
+  "ecosystem": "npm",
+  "total": 6,
+  "summary": {
+    "good": 4,
+    "okay": 0,
+    "risky": 1,
+    "critical": 1
+  },
+  "dependencies": [
+    {
+      "name": "express",
+      "version": "4.18.2",
+      "latest": "4.21.0",
+      "ecosystem": "npm",
+      "health": {
+        "overall": 92,
+        "maintenance": 95,
+        "popularity": 98,
+        "compatibility": 85,
+        "security": 88,
+        "level": "good",
+        "details": {
+          "maintenance": { "lastCommit": 100, "releaseFrequency": 90, "versionRecency": 100, "changelogPresence": 80 },
+          "popularity": { "downloads": 100, "stars": 100, "dependents": 95, "contributors": 98 },
+          "compatibility": { "breakingChanges": 80, "peerDependency": 90, "esmCjs": 85 },
+          "security": { "knownCVEs": 85, "deprecated": 100, "license": 100 }
+        },
+        "explanations": []
+      },
+      "recommendation": {
+        "action": "ok",
+        "reason": "Healthy — no action needed"
+      }
+    },
+    {
+      "name": "moment",
+      "version": "2.29.4",
+      "latest": "2.30.1",
+      "ecosystem": "npm",
+      "health": {
+        "overall": 34,
+        "maintenance": 22,
+        "popularity": 65,
+        "compatibility": 40,
+        "security": 10,
+        "level": "risky",
+        "details": {
+          "maintenance": { "lastCommit": 0, "releaseFrequency": 30, "versionRecency": 40, "changelogPresence": 20 },
+          "popularity": { "downloads": 95, "stars": 85, "dependents": 60, "contributors": 50 },
+          "compatibility": { "breakingChanges": 40, "peerDependency": 50, "esmCjs": 30 },
+          "security": { "knownCVEs": 10, "deprecated": 0, "license": 20 }
+        },
+        "explanations": [
+          "Low maintenance (22/100) — poor last commit",
+          "Security concern (10/100) — deprecated issue detected",
+          "DEPRECATED: Legacy package, use dayjs instead"
+        ]
+      },
+      "recommendation": {
+        "action": "replace",
+        "reason": "Package is deprecated. Consider replacing with dayjs — Fast 2kB alternative to Moment.js with the same modern API",
+        "suggested": "dayjs",
+        "alternatives": [
+          { "name": "dayjs", "description": "Fast 2kB alternative to Moment.js with the same modern API", "reason": "Actively maintained, 2kB size, identical API.", "downloads": 42000000, "stars": 47000 },
+          { "name": "date-fns", "description": "Modern JavaScript date utility library", "reason": "Tree-shakeable, immutable, 200+ functions.", "downloads": 35000000, "stars": 35000 }
+        ]
+      }
+    }
+  ]
+}

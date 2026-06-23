@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+.env
+.DS_Store
+coverage/
+.turbo/
+.cache/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Test
+junit.xml

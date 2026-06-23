@@ -1,0 +1,7 @@
+flask==2.3.3
+django>=4.2,<5.0
+requests==2.31.0
+numpy==1.26.0
+pandas==2.1.0
+# This is a comment
+-e git+https://github.com/user/repo.git#egg=somepackage

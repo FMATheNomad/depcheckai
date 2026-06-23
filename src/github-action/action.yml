@@ -1,0 +1,26 @@
+name: 'depcheck-ai'
+description: 'AI-powered dependency health check — detects deprecated, risky, and broken dependencies'
+author: 'FMATheNomad'
+inputs:
+  manifest-path:
+    description: 'Path to manifest file (package.json, requirements.txt, Cargo.toml) or directory'
+    required: false
+    default: '.'
+  format:
+    description: 'Output format: table, json, markdown'
+    required: false
+    default: 'markdown'
+  fail-on:
+    description: 'Fail CI if score below threshold (low, medium, high)'
+    required: false
+    default: 'low'
+  ecosystem:
+    description: 'Filter by ecosystem (npm, pypi, crates)'
+    required: false
+    default: ''
+runs:
+  using: 'node20'
+  main: '../../dist/github-action/run.js'
+branding:
+  icon: 'shield'
+  color: 'green'

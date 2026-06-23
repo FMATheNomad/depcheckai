@@ -1,0 +1,12 @@
+depcheck-ai — Dependency Health Report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Package              Ver          Health     Score  Action
+─────────────────────────────────────────────────────────────
+express             4.18.2       good       92       ✓ ok
+lodash              4.17.21      good       88       ✓ ok
+moment              2.29.4       risky      34     🔴 REPLACE → dayjs
+request-deprecated  2.88.2       critical   8      🔴 REPLACE → axios
+uuid                9.0.0        good       85       ↑ update to 9.0.1
+typescript          5.4.0        good       90       ✓ ok
+─────────────────────────────────────────────────────────────
+6 dependencies | 1 critical | 1 risky | 4 good
